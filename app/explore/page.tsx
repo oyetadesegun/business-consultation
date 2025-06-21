@@ -24,33 +24,6 @@ export default function ExplorePage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-10 border-b border-gray-200 dark:border-gray-800 bg-white px-4 lg:px-6 h-16 flex items-center">
-        <Link href="/" className="flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="h-6 w-6 text-[#7E69AB]"
-          >
-            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
-            <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
-            <path d="M19 11h2m-1 -1v2" />
-          </svg>
-          <span className="ml-2 text-xl font-bold text-[#2D3748]">AdviceHive</span>
-        </Link>
-        <div className="ml-auto flex items-center gap-4">
-          <Link href="/dashboard/ask">
-            <Button className="bg-[#7E69AB] hover:bg-[#6A5A91] text-white transition-colors">
-              <PlusCircle className="mr-2 h-4 w-4" />
-              Ask Question
-            </Button>
-          </Link>
-        </div>
-      </header>
       <main className="flex-1 overflow-auto p-4 md:p-6 bg-[#F7F5FF]">
         <div className="mx-auto max-w-4xl space-y-6">
           <div className="flex items-center justify-between">
