@@ -1,13 +1,15 @@
-import { signIn } from "next-auth/react"
+import { signIn } from "@/auth"
 
 export default function SignIn() {
   return (
-    <button
-      type="button"
-      onClick={() => signIn("google")}
-      className="mt-3"
+    <form
+      className="w-full flex justify-center"
+      action={async () => {
+        "use server"
+        await signIn("google", { redirectTo: "/" })
+      }}
     >
-      Sign in with Google
-    </button>
+      <button type="submit" className="mx-auto w-fit" >Signin with Google</button>
+    </form>
   )
-}
+} 
