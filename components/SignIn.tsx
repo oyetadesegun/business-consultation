@@ -6,7 +6,7 @@ export default function SignIn() {
       className="w-full flex justify-center"
       action={async () => {
         "use server"
-        await signIn("google", { redirectTo: "/" })
+        await signIn("google", { redirectTo: "/dashboard" })
       }}
     >
       <button type="submit" className="mx-auto w-fit" >Signin with Google</button>
