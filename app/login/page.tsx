@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import SignIn from "@/components/SignIn"
 
 export default function LoginPage() {
   const router = useRouter()
@@ -31,21 +32,10 @@ export default function LoginPage() {
         <CardHeader className="space-y-1">
           <div className="flex justify-center mb-4">
             <Link href="/" className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6 text-[#7E69AB]"
-              >
-                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
-                <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
-                <path d="M19 11h2m-1 -1v2" />
-              </svg>
-              <span className="ml-2 text-xl font-bold text-[#2D3748]">AdviceHive</span>
+              <div className="h-8 w-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+            <span className="text-white font-bold text-sm">MB</span>
+          </div>
+              <span className="ml-2 text-xl font-bold text-[#2D3748]">MyBiz.Com</span>
             </Link>
           </div>
           <CardTitle className="text-2xl font-bold text-center text-[#2D3748]">Welcome back</CardTitle>
@@ -92,6 +82,7 @@ export default function LoginPage() {
             >
               {isLoading ? "Logging in..." : "Login"}
             </Button>
+            <SignIn/>
             <div className="mt-4 text-center text-sm text-[#4A5568]">
               Don&apos;t have an account?{" "}
               <Link href="/signup" className="text-[#7E69AB] hover:underline">

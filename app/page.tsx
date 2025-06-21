@@ -196,7 +196,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link href="/forum">
-                  <Button size="lg" variant="outline" className="px-8 border-white text-white hover:bg-white/10">
+                  <Button size="lg" variant="outline" className="px-8 border-white text-blue-600 hover:bg-white/10">
                     <MessageCircle className="mr-2 h-4 w-4" />
                     Join Community
                   </Button>

@@ -83,7 +83,7 @@ export default function GetHelpPage() {
                   <CardTitle className="text-gray-900">
                     {step === 1 ? "Share Your Business Challenge" : "Let's Connect With You"}
                   </CardTitle>
-                  <CardDescription className="text-gray-600">
+                  <CardDescription className="text-gray-600 mt-2">
                     {step === 1
                       ? "Tell us what you're dealing with - everything is kept completely confidential"
                       : "Provide your contact details so our team can help you personally"}
